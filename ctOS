@@ -1,0 +1,22 @@
+#!/bin/bash
+
+RED='\033[0;31m'
+NC='\033[0m'
+GREEN='\033[0;32m'
+clear
+echo -e "      _    ___  ____  "
+echo -e "  ___| |_ / _ \/ ___| "
+echo -e " / __| __| | | \___ \ "
+echo -e "| (__| |_| |_| |___) |"
+echo -e " \___|\__|\___/|____/ "
+echo ""
+echo ""
+
+read -p '[ctOS] >' onput
+if [ $onput = "scan" ]
+then
+	sudo ./ctOSscan
+
+else
+	echo 'error : ' $onput ' unknow ! '
+fi

@@ -1,0 +1,17 @@
+#!/bin/bash
+RED='\033[0;31m'
+NC='\033[0m'
+GREEN='\033[0;32m'
+clear
+echo -e "      _    ___  ____                       		 "
+echo -e "  ___| |_ / _ \/ ___|  ${RED} ___  ___ __ _ _ __ ${NC} "
+echo -e " / __| __| | | \___ \  ${RED}/ __|/ __/ _' | '_ \ ${NC}"
+echo -e "| (__| |_| |_| |___) | ${RED}\__ \ (_| (_| | | | |${NC}"
+echo -e " \___|\__|\___/|____/  ${RED}|___/\___\__,_|_| |_|${NC}"
+echo ""
+echo ""
+ifconfig wlan0
+ifconfig eth0
+echo ""
+read -p '[ctOS]> Enter IP : ' ip
+sudo map -A -O $ip
